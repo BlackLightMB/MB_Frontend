@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+.header_logo {
+    width: 63px;
+    height: 63px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+.header_text {  
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 100px;
+}
+
+/* 로그인 */
+.login_top {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.login_wrapper {
+    width: 500px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+.login_logo {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.login_text {  
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 130px;
+}
+
+#login_form>input {
+    width: 410px;
+    height: 80px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+}
+
+.person {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.key {
+    margin-top: 27px;
+}
+
+#login_form input:focus {
+    outline: 0;
+}
+
+.login {
+    font-size: 30px;
+    width: 410px;
+    height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    border: 2px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+}
+
+#login_form input[type="email"] {
+    font-size: 25px;
+    border: 0px;
+    margin-left: 10px;
+    width: 90%;
+    background-color: #F8F8F8;
+}
+
+.password{
+    font-size: 30px;
+    width: 410px;
+    height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    border: 2px solid lightgray;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 1px solid gray ;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+}
+
+#login_form input[type="password"] {
+    font-size: 25px;
+    border: 0px;
+    margin-left: 10px;
+    width: 90%;
+    background-color: #F8F8F8;
+}
+
+
+#login_form input[type="submit"] {
+    color: #fff;
+    font-size: 30px;
+    background-color: lightgray;
+    color: black;
+    margin-top: 50px;
+    border-width: 0px;
+}
+
+#login_form input[value="회원가입"] {
+    color: #fff;
+    font-size: 30px;
+    background-color: white;
+    color: #6D71D0;
+    margin-top: 20px;
+    border-width: 0px;
+}
+.focus-login {
+    border: 2px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+
+.focus-password {
+    border: 2px solid gray;
+    border-top: 1px solid gray;
+  }
