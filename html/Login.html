@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script>
+      $(document).ready(function () {
+        $("#loginField").focus(function () {
+          $(this).closest(".login").addClass("focus-login"); // 가장 가까운 login에 클래스 추가
+        });
+        $("#loginField").blur(function () {
+          $(this).closest(".login").removeClass("focus-login"); // 가장 가까운 login에 클래스 제거
+        });
+        $("#passwordField").focus(function () {
+          $(this).closest(".password").addClass("focus-password"); // 가장 가까운 Pwd에 클래스 추가
+        });
+        $("#passwordField").blur(function () {
+          $(this).closest(".password").removeClass("focus-password"); // 가장 가까운 Pwd에 클래스 제거
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <img class="header_logo" src="../images/logo-google-1991840_1280.png" />
+      <div class="header_text">Movie 커뮤니티</div>
+    </div>
+    <div class="login_top">
+      <div class="login_wrapper">
+        <img class="login_logo" src="../images/logo-google-1991840_1280.png" />
+        <div class="login_text">Movie 커뮤니티</div>
+        <div id="login_form">
+          <div class="login">
+            <img
+              class="person"
+              src="../images/person@2x.png"
+              width="30px"
+              height="30px"
+            />
+            <input
+              id="loginField"
+              type="email"
+              name="userName"
+              placeholder="아이디"
+            />
+          </div>
+          <div class="password">
+            <img
+              class="key"
+              src="../images/key.horizontal@2x.png"
+              width="35px"
+              height="20px"
+            />
+            <input
+              id="passwordField"
+              type="password"
+              name="userPassword"
+              placeholder="비밀번호"
+            />
+          </div>
+
+          <input type="submit" value="로그인" />
+          <input type="submit" value="회원가입" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
