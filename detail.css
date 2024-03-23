@@ -1,0 +1,284 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gotic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+html {
+    background: #f7f5f5;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    letter-spacing: -0.4px ! important;
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.5 ! important;
+    background: #ffffff;
+    font-family: 'Spoqa Han Sans', sans-selif;
+}
+
+
+/* 헤더 */
+
+.main-header {
+    position: relative;
+    height: 200px;
+    background: #F7F0E8;
+}
+
+.header {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 15px;
+    bottom: 15px;
+    height: 180px;
+
+}
+.main-logo {
+    position: absolute;
+}
+
+/* 헤더 메뉴 */
+.header-menu {
+    float: right;
+    height: 100px;
+}
+
+.header-menu ul {
+    text-align: right;
+}
+
+.header-menu ul li {
+    display: inline;
+    padding: 0 15px;
+    line-height: 100px;
+    font-size: 30px;
+    color: #524d4d;
+    text-shadow: 0 1px 1px white;
+}
+
+.header-menu ul li:hover {
+    background: #e1dfdf;
+    border-radius: 2px;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    color: #883F39;
+}
+
+
+/* 헤더 네비게이션 */
+.main-navigation {
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    height: 80px;
+    background: #F7F0E8;
+    border-top: 1px solid #cfcaca;
+}
+
+.main-navigation>ul {
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-navigation>ul>li {
+    display: inline;
+    padding: 0 15px;
+    line-height: 30px;
+    color: #524d4d;
+    text-shadow: 0 1px 1px white;
+}
+
+.main-navigation>ul>li:hover {
+    background: #e1dfdf;
+    border-radius: 2px;
+}
+.main-navigation>ul>li>a {
+    text-decoration: none;
+    color: #883F39;
+
+}
+.outer-menu {
+    float: left;
+    width: auto;
+    line-height: 80px;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.outer-menu:hover {
+    background: #e1dfdf;
+}
+
+.inner-menu {
+    display: none;
+    background: #ffffff;
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #cccaca;
+    box-shadow: 0 2px 4px rgba(34, 25, 25, 0.5);
+}
+
+.inner-menu a {
+    display: block;
+    padding: 5px 10px;
+    z-index: 5000;
+}
+
+.inner-menu a:hover {
+    background: #e1dfdf;
+}
+
+/* 헤더 검색 */
+.header-search-form {
+    position: absolute;
+    line-height: 80px;
+    top: 100px;
+    right: 20px;
+    size: 100px;
+    float: right;
+}
+/* 메인 */
+.section{
+    position: relative;
+    width: 70%;
+    margin: 80px auto;
+
+    
+}
+.head-section{
+    margin-bottom: 0 0 15px 0 ;
+    border-bottom: 2px solid #999;
+}
+
+.mPoster{
+    display: block;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mPoster a img{
+    width: 294px;
+    height: 420px;
+}
+
+
+.mProfile{
+    margin-bottom: 100px;
+}
+.mProfile-detail{
+    padding-right: 600px;
+}
+.head-section1{
+    font-size: 50px;
+}
+.head-section2{
+    font-size: 25px;
+    line-height: 120%;
+    color: #999;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.main-section{
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+.main-section dl{
+    padding-top: 10px;
+}
+
+.main-section dl dt{
+    width: 75px;
+    float: left;
+    color: #999;
+}   
+.main-section dl dd{
+    padding: 0 0 10px 100px;
+}  
+.mTrailer{
+    padding-bottom: 50px;
+}
+.mTrailer h2{
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    border-bottom: 1px solid #777;
+}
+
+.mReview{
+    position: relative; 
+    padding-bottom: 300px;
+}
+
+.head-review{
+    position: relative; 
+}
+.head-review h2{
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    border-bottom: 1px solid #777;
+}
+.writeReview{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    right: 0;
+    top: 0;
+}
+.mainReview{
+    position: relative;
+    height: 100%;
+
+}
+.mainReview .reviewform{
+    width: 100%;
+    height: 150px;
+}
+.userProfile{
+    width: 500px;
+    float: left;
+    height: 100%;
+}
+.userProfile a{
+    width: 75px;
+    float: left;
+}
+.userProfile div{
+    width: 300px;
+    padding: 0 0 10px 70px;
+    align-items: center;
+    font-size: 25px;
+    border-right: 1px solid;
+    float: left;
+}
+
+.userReview{
+    float: left;
+    font-size: 25px;
+}
