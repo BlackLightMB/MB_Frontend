@@ -2,69 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/semi_project.css">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>MovieDetail</title>
+    <meta name="description" content="Portfolio for korean-renowned software engineer Jun Hyun" />
+    <meta name="author" content="Jun Hyun" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="MovieBlending" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포 후 생성된 URL" />
+    <meta property="og:image" content="배포 후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/87f959d9dc.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/detail.css" />
+    <!-- JavaScript -->
+    <script src="src/main.js" defer></script>
 </head>
 
 <body>
     <!-- 헤더 -->
-    <header class="main-header">
-        <div class="header">
-            <div class="main-logo">
-                <img src="./images/logo.png" alt="logo">
+    <!-- 헤더-->
+    <header class="header">
+        <div class="header1">
+            <div class="header__logo">
+                <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+                <h1 class="header__logo__title"><a href="#">Movie Blending</a></h1>
             </div>
-            <nav class="header-menu">
-                <ul>
-                    <li><a href="#">마이페이지</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-
+            <!-- 상단 우측 nav바 -->
+            <nav>
+                <ul class="header__menu">
+                    <li><a class="header__menu__item" href="#mypage">마이페이지</a></li>
+                    <li>
+                        <a class="header__menu__item" href="#login">로그인</a>
+                    </li>
+                    <li><a class="header__menu__item" href="#join">회원가입</a></li>
                 </ul>
             </nav>
+        </div>
 
-
-
-            <!-- 네비게이션 메뉴 -->
-            <nav class="main-navigation">
-                <ul class="outer-menu">
+        <!-- 하단 header -->
+        <div class="header2">
+            <nav>
+                <ul class="header__menu">
                     <li>
-                        <a href="#">박스오피스</a>
-                        <ul class="inner-menu">
-                            <li><a href="#">일별 박스오피스</a></li>
-                            <li><a href="#">주간 박스오피스</a></li>
-                            <li><a href="#">주말 박스오피스</a></li>
-                        </ul>
+                        <a class="header__menu__item active" href="#boxoffice">박스오피스
+                        </a>
                     </li>
-                </ul>
-                <ul class="outer-menu">
-                    <li>
-                        <a href="#">영화 조회</a>
-                        <ul class="inner-menu">
-                            <li><a href="#">일별</a></li>
-                            <li><a href="#">주간</a></li>
-                            <li><a href="#">주말</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="outer-menu">
-                    <li>
-                        <a href="#">영화 talk</a>
-                    </li>
+                    <li><a class="header__menu__item" href="#view">영화조회</a></li>
+                    <li><a class="header__menu__item" href="#talk">영화Talk</a></li>
                 </ul>
             </nav>
-            <div class="header-search-form">
-                <form>
-                    <input type="search" class="input-search">
-                    <input type="submit" class="input-search-submit" value="검색">
-                </form>
+            <div class="header__search">
+                <input name="search" type="text" placeholder="찾고 있는 영화가 있나요?" size="60" />
+                <div class="header__search__button">검색</div>
             </div>
         </div>
     </header>
+
+
+    <!-- 메인 -->
     <section class="section">
         <div class="mProfile">
             <div class="mPoster">
@@ -92,7 +96,7 @@
                         <dt>장르</dt>
                         <dd>미스터리, 스릴러, 공포, 호러</dd>
                         <dt>출연</dt>
-                        <dd>최민식, 김고은, 유해진, 이도현 ..</dd>
+                        <dd><a href="#">최민식</a>, <a href="#">김고은</a>, <a href="#">유해진</a>, <a href="#">이도현</a> ..</dd>
                         <dt>평점</dt>
                         <dd><img src="./images/star.PNG" height="30px"> 4.8 <a href="#">더보기</a></dd>
                     </dl>
@@ -103,11 +107,11 @@
         <div class="mTrailer">
             <h2>트레일러</h2>
             <div class="trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rjW9E1BR_30?si=uDMltWYJqwLoTQqb"
+                <iframe width="500" height="300" style="margin: 20px;" src="https://www.youtube.com/embed/rjW9E1BR_30?si=uDMltWYJqwLoTQqb"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fRkOWmfZjkY?si=yeC4EsjtvsD1DlWa"
+                <iframe width="500" height="300" style="margin: 20px;" src="https://www.youtube.com/embed/fRkOWmfZjkY?si=yeC4EsjtvsD1DlWa"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -131,7 +135,7 @@
                     <div class="userReview">
                         <div>오컬트 영화를 보면서 감동이 밀려온 적은 생전 처음 있었다. 내용은 걍렬하고 배우들 연기는 몰입 그 자체!!!</div>
                     </div>
-                    
+
                 </div>
                 <div class="reviewform">
                     <div class="userProfile">
@@ -142,13 +146,35 @@
                     <div class="userReview">
                         <div>안 무섭다면서요. 무섭구만</div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-
-
     </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="max-container">
+            <h2 class="title">Movie Blending</h2>
+            <p class="description">세미 프로젝트 3팀</p>
+            <ul class="contact__links">
+                <li>
+                    <a class="contact__link" href="https://www.instagram.com/netflixkr/" title="netflixkr link"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact__link" href="https://www.instagram.com/disneypluskr/" title="disneypluskr link"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>©BlackLight - All rights reserved</p>
+        </div>
+    </footer>
+
 
     <script>
         $(document).ready(function () {
