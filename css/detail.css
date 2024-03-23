@@ -290,7 +290,7 @@ input::placeholder {
 }
 
 .userProfile {
-    width: 500px;
+    width: 400px;
     float: left;
     height: 100%;
 }
@@ -300,7 +300,11 @@ input::placeholder {
     float: left;
     color: #1b1e26;
 }
-
+.userProfile div a{
+    width: 300px;
+    float: left;
+    color: #1b1e26;
+}
 .userProfile div {
     width: 300px;
     padding: 0 0 10px 70px;
@@ -312,7 +316,6 @@ input::placeholder {
 
 
 .userReview {
-    float: left;
     font-size: 25px;
 }
 

@@ -1,117 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/header.css">
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <title>UserDetail</title>
-    <meta
-      name="description"
-      content="Portfolio for korean-renowned software engineer Jun Hyun"
-    />
-    <meta name="author" content="Jun Hyun" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- OG (Open Graph Data) -->
-    <meta property="og:title" content="MovieBlending" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포 후 생성된 URL" />
-    <meta property="og:image" content="배포 후에 생성된 이미지 URL" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/87f959d9dc.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/userDetail.css" />
-    <!-- JavaScript -->
-    <script src="src/main.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/header.css">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <title>UserDetail</title>
+  <meta name="description" content="Portfolio for korean-renowned software engineer Jun Hyun" />
+  <meta name="author" content="Jun Hyun" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- OG (Open Graph Data) -->
+  <meta property="og:title" content="MovieBlending" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="배포 후 생성된 URL" />
+  <meta property="og:image" content="배포 후에 생성된 이미지 URL" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/87f959d9dc.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/userDetail.css" />
+  <!-- JavaScript -->
+  <script src="src/main.js" defer></script>
 </head>
+
 <body>
-        <!-- 헤더-->
-        <header class="header">
-            <div class="header1">
-                <div class="header__logo">
-                    <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-                    <h1 class="header__logo__title"><a href="#">Movie Blending</a></h1>
-                </div>
-                <!-- 상단 우측 nav바 -->
-                <nav>
-                    <ul class="header__menu">
-                        <li><a class="header__menu__item" href="#mypage">마이페이지</a></li>
-                        <li>
-                            <a class="header__menu__item" href="#login">로그인</a>
-                        </li>
-                        <li><a class="header__menu__item" href="#join">회원가입</a></li>
-                    </ul>
-                </nav>
+  <!-- 헤더-->
+  <header class="header">
+    <div class="header1">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Movie Blending</a></h1>
+      </div>
+      <!-- 상단 우측 nav바 -->
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__menu__item" href="#mypage">마이페이지</a></li>
+          <li>
+            <a class="header__menu__item" href="#login">로그인</a>
+          </li>
+          <li><a class="header__menu__item" href="#join">회원가입</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 하단 header -->
+    <div class="header2">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__menu__item active" href="#boxoffice">박스오피스
+            </a>
+          </li>
+          <li><a class="header__menu__item" href="#view">영화조회</a></li>
+          <li><a class="header__menu__item" href="#talk">영화Talk</a></li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <input name="search" type="text" placeholder="찾고 있는 영화가 있나요?" size="60" />
+        <div class="header__search__button">검색</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main">
+      <div class="userProfile">
+        <div class="main-info">
+          <div class="profile-header">
+            <div>프로필 정보</div>
+          </div>
+          <div class="profile-main-info">
+            <img src="./images/프로필사진.jpg">
+            <div class="profile-main-info-box">
+              <div class="person-info">
+                닉네임 : <b>지나가던 관람객</b>
+              </div>
             </div>
-    
-            <!-- 하단 header -->
-            <div class="header2">
-                <nav>
-                    <ul class="header__menu">
-                        <li>
-                            <a class="header__menu__item active" href="#boxoffice">박스오피스
-                            </a>
-                        </li>
-                        <li><a class="header__menu__item" href="#view">영화조회</a></li>
-                        <li><a class="header__menu__item" href="#talk">영화Talk</a></li>
-                    </ul>
-                </nav>
-                <div class="header__search">
-                    <input name="search" type="text" placeholder="찾고 있는 영화가 있나요?" size="60" />
-                    <div class="header__search__button">검색</div>
-                </div>
-            </div>
-        </header>
-    
-        <main>
-            <div class="main"></div>
-    
-        </main>
-    
-        <!-- Footer -->
-        <footer id="contact" class="section">
-            <div class="max-container">
-              <h2 class="title">Movie Blending</h2>
-              <p class="description">세미 프로젝트 3팀</p>
-              <ul class="contact__links">
-                <li>
-                  <a
-                    class="contact__link"
-                    href="https://www.instagram.com/netflixkr/"
-                    title="netflixkr link"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="contact__link"
-                    href="https://www.instagram.com/disneypluskr/"
-                    title="disneypluskr link"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-              <p>©BlackLight - All rights reserved</p>
-            </div>
-          </footer>
-    
+          </div>
+        </div>
+        <div class="user-writeReview">
+          <div class="user-Review-header">
+            <div>작성한 관람평</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="section">
+    <div class="max-container">
+      <h2 class="title">Movie Blending</h2>
+      <p class="description">세미 프로젝트 3팀</p>
+      <ul class="contact__links">
+        <li>
+          <a class="contact__link" href="https://www.instagram.com/netflixkr/" title="netflixkr link" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="contact__link" href="https://www.instagram.com/disneypluskr/" title="disneypluskr link"
+            target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p>©BlackLight - All rights reserved</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
