@@ -101,11 +101,12 @@ input::placeholder {
   position: relative;
   width: 70%;
   margin: 80px auto;
+  height: 100%;
 }
 
 .main-info {
   position: relative;
-  background-color: #e7e4e4;
+  background-color: #f8f8f8;
   border-radius: 3cap;
   padding: 15px;
   margin-bottom: 30px;
@@ -129,18 +130,18 @@ input::placeholder {
 }
 
 .profile-main-info-box {
-
   height: 135px;
 }
 
 .person-info {
   font-size: 30px;
   padding-left: 170px;
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .user-Review-header {
   font-size: 30px;
+  margin-top: 50px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #777;
@@ -162,6 +163,13 @@ input::placeholder {
   background-color: var(--color-orange);
 }
 
+.movie_name{
+  width: 80%;
+  float: left;
+  margin-top: 20px;
+  
+}
+
 .movie__img {
   width: 100%;
 }
@@ -171,12 +179,12 @@ input::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-color: var(--color-black);
   opacity: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   transition: all 250ms ease-in;
   transform: translateY(-10px);
@@ -200,10 +208,37 @@ input::placeholder {
   height: 2px;
   background-color: var(--color-orange);
 }
+.review_box{
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  display: block;
+  background-color: #ffffff;
+  padding: 0 30px;
+  white-space: normal;
+}
+
+.review{
+  color: black;
+  margin: 15px auto;
+  overflow : hidden;
+  text-overflow : ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.movie__review:hover {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 
 /* 별 모양 : 즐겨찾기 기능*/
 .star-rating {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .star {
