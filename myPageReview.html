@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myPageReview.css">
+    <script src="https://kit.fontawesome.com/87f959d9dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 헤더-->
+    <header class="header">
+        <div class="header1">
+            <div class="header__logo">
+                <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+                <h1 class="header__logo__title"><a href="#">Movie Blending</a></h1>
+            </div>
+            <!-- 상단 우측 nav바 -->
+            <nav>
+                <ul class="header__menu">
+                    <li><a class="header__menu__item" href="#mypage">마이페이지</a></li>
+                    <li>
+                        <a class="header__menu__item" href="#login">로그인</a>
+                    </li>
+                    <li><a class="header__menu__item" href="#join">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 하단 header -->
+        <div class="header2">
+            <nav>
+                <ul class="header__menu">
+                    <li>
+                        <a class="header__menu__item active" href="#boxoffice">박스오피스
+                        </a>
+                    </li>
+                    <li><a class="header__menu__item" href="#view">영화조회</a></li>
+                    <li><a class="header__menu__item" href="#talk">영화Talk</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input name="search" type="text" placeholder="찾고 있는 영화가 있나요?" size="60" />
+                <div class="header__search__button">검색</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <a class="myMenu">사용자 정보</a><br>
+            <a class="myMenu" style="text-decoration: underline;">작성한 리뷰</a><br>
+            <a class="myMenu">즐겨찾기</a>
+        </div>
+        <div class="reviewBox">
+            <img class="posterImg" src="images/Exhuma.jpg">
+            <img class="xmark" src="images/xmark@2x.png">
+            <input class="reviewUpdate" type="submit" value="내용 수정">
+            <span class="movieName">파묘</span><br>
+            <div class="starBox">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <span class="movieRate">&nbsp;5.0 / 5.0</span><br>
+            </div>
+            <span class="reviewDes">벌써부터차기작을 기대하게만든다. 메니아층이있는 오컬트물을 대중영화까지 끌어올릴수있는 유일한감독인거같다.</span>
+        </div>
+        <div class="reviewBox">
+            <img class="posterImg" src="images/dune.jpg">
+            <img class="xmark" src="images/xmark@2x.png">
+            <input class="reviewUpdate" type="submit" value="내용 수정">
+            <span class="movieName">듄: 파트2</span><br>
+            <div class="starBox">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <img class="star" src="images/star.fill@2x.png">
+                <span class="movieRate">&nbsp;5.0 / 5.0</span><br>
+            </div>
+            <span class="reviewDes">객 반지의제왕 정도의 걸작을 극장에서 다시 보려면 재개봉만이 답이라고 생각했는데..그 영광에 도전할만 하다.이건 진짜 반지의 제...</span>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <!-- Footer -->
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">Movie Blending</h2>
+            <p class="description">세미 프로젝트 3팀</p>
+            <ul class="contact__links">
+                <li>
+                    <a class="contact__link" href="https://www.instagram.com/netflixkr/" title="netflixkr link"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact__link" href="https://www.instagram.com/disneypluskr/" title="disneypluskr link"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>©BlackLight - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
