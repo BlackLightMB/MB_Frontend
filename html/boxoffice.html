@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Blending</title>
+    <link rel="stylesheet" href="../css/boxoffice.css">
+</head>
+<body>
+    <!-- 헤더-->
+    <header class="header">
+        <div class="header1">
+          <div class="header__logo">
+            <img
+              class="header__logo__img"
+              src="../images/favicon.ico"
+              alt="logo"
+            />
+            <h1 class="header__logo__title"><a href="#">Movie Blending</a></h1>
+          </div>
+          <!-- 상단 우측 nav바 -->
+          <nav>
+            <ul class="header__menu">
+              <li><a class="header__menu__item" href="#mypage">마이페이지</a></li>
+              <li>
+                <a class="header__menu__item" href="#login">로그인</a>
+              </li>
+              <li><a class="header__menu__item" href="#join">회원가입</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <!-- 하단 header -->
+        <div class="header2">
+          <nav>
+            <ul class="header__menu">
+              <li>
+                <a class="header__menu__item active" href="#boxoffice"
+                  >박스오피스
+                </a>
+              </li>
+              <li><a class="header__menu__item" href="#view">영화조회</a></li>
+              <li><a class="header__menu__item" href="#talk">영화Talk</a></li>
+            </ul>
+          </nav>
+          <div class="header__search">
+            <input
+              name="search"
+              type="text"
+              placeholder="찾고 있는 영화가 있나요?"
+              size="60"
+            />
+            <div class="header__search__button">검색</div>
+          </div>
+        </div>
+      </header>
+
+
+    <!-- 메인 -->
+    <main>
+        <div class="boxoffice">
+            <div class="boxoffice_name">
+                <ul>
+                    <li class="active"><a href="#">일별 박스오피스</a></li>
+                    <li><a href="#">주간 박스오피스</a></li>
+                    <li><a href="#">주말 박스오피스</a></li>
+                </ul>
+            </div>
+            <div class="boxoffice_movie">
+                <ul class="movies">
+                    <li class="col">
+                        <img src="../images/movies/pamyo.png" class="movie_img" alt="...">
+                        <div class="rank"><strong>1</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">파묘</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <img src="../images/movies/dune.png" class="movie_img" alt="...">
+                        <div class="rank"><strong>2</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">듄 - 파트 2</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <img src="../images/movies/bab.jpg" class="movie_img" alt="...">
+                        <div class="rank"><strong>3</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">밥 말리 - 원 러브</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <img src="../images/movies/wonka.jpg" class="movie_img" alt="...">
+                        <div class="rank"><strong>4</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">웡카</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <img src="../images/movies/comment.png" class="movie_img" alt="...">
+                        <div class="rank"><strong>5</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">댓글부대</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <img src="../images/movies/gozilla.png" class="movie_img" alt="...">
+                        <div class="rank"><strong>6</strong></div>
+                        <div class="info">
+                          <h3 class="card-title">고질라</h5>
+                          <p class="card-text">예매율: 16.7%</p>
+                          <p class="card-text">2024.02.22 개봉</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <!-- Footer -->
+    <footer id="contact" class="section">
+        <div class="max-container">
+          <h2 class="title">Movie Blending</h2>
+          <p class="description">세미 프로젝트 3팀</p>
+          <ul class="contact__links">
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/netflixkr/"
+                title="netflixkr link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact__link"
+                href="https://www.instagram.com/disneypluskr/"
+                title="disneypluskr link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <p>©BlackLight - All rights reserved</p>
+        </div>
+      </footer>
+</body>
+</html>
