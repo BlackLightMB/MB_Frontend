@@ -242,6 +242,7 @@
     transition: all 250ms ease-in;
     transform: translateY(-10px);
     font-size: 1.2rem; /*영화 제목, 설명 글짜 크기*/
+    color: white;
   }
   
   .info:hover {
